@@ -25,6 +25,7 @@ body {
 	-moz-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
     --base-color: rgba(247, 98, 9, 0.48);
+    --text-color: #666666;
 }
 ::selection {
 	color: #fff;
@@ -114,7 +115,6 @@ line-height: 41px;
 
 .service-icon {
   border-radius: 4px;
-  /* color: #DC4343; COLOR */
   color: var(--base-color);
   display: inline-block;
   font-size: 50px;
@@ -124,12 +124,33 @@ line-height: 41px;
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
   border-radius: 50%;
-  border: 1px solid rgba(247, 98, 9, 0.48); /* COLOR */
+  border: 1px solid var(--base-color);
   padding-top: 18px;
   text-align: center;
 }
-
- 
+.service-icon-program {
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  padding-top: 0px;
+  line-height: 50px;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+.program-row > div {
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+}
+.program-icon {
+    width: 80px;
+}
+.program-time {
+    width: 80px;
+}
+.program-title {
+    width: 300px;
+    text-align: left;
+}
 
 .our-services .col-sm-4 {
   border-right:1px solid #f2f2f2;
