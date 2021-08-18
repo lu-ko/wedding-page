@@ -41,6 +41,13 @@ p {
 	color: #858585;
 	margin: 0 0 1em !important;
 }
+p.txt-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+p.txt-warning {
+    color: red;
+}
 h1, h2, h3, h4, h5, h6, .logo {
 	font-family: 'Dancing Script', cursive;
 }
@@ -529,7 +536,7 @@ text-align: center;
 .page-section {
 	width: 100%;
 	height: auto;
-	padding: 60px 0;
+    padding: 45px 0 20px;
 }
 .noPadd {
 	padding: 0;
@@ -674,7 +681,7 @@ a.arrow-link:hover {
 .heading {
 	padding: 3px 10px;
 	padding-bottom: 15px;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 	display: block;
 }
 .heading p {
@@ -861,7 +868,7 @@ img, video, iframe, embed, object {
 #work {
 	background: #F1F1F1;
 	color: black;
-	padding: 45px 0 100px;
+	padding: 45px 0 20px;
 }
 #work h2 {
 	/* color: #fff !important; */
@@ -1331,7 +1338,7 @@ font-size: 21px !important;
 	font-size: 16px;
 }
 .page-section {
-	padding: 0px;
+    padding: 45px 0 20px;
 }
 .page-section h1 {
 	font-size: 3em;
