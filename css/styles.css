@@ -132,32 +132,55 @@ line-height: 41px;
   padding-top: 18px;
   text-align: center;
 }
-.service-icon-program {
-  height: 50px;
-  width: 50px;
-  font-size: 30px;
-  padding-top: 0px;
-  line-height: 50px;
-  color: black;
-  border: 1px solid var(--text-color);
+.program-table {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
 }
-.service-icon-program > img {
-    width: 30px;
-    margin-top: -8px;
+.program-table,
+.program-table tr,
+.program-table td {
+    /* border: 1px solid black; */
 }
-.program-row > div {
-    display: inline-block;
-    padding: 0px 10px 0px 10px;
+.program-table td {
+    margin: 5px 10px 5px 10px;
+}
+.program-table h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.program-row-underline {
+    border-bottom: 2px solid black;
 }
 .program-icon {
-    width: 80px;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    padding-top: 0px;
+    line-height: 40px;
+    color: black;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    display: inline-block;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    border-radius: 50%;
+}
+.program-icon > img {
+    width: 25px;
+    margin-top: -8px;
 }
 .program-time {
-    width: 80px;
+    text-align: right;
+    padding-left: 20px;
 }
 .program-title {
-    width: 300px;
     text-align: left;
+    padding-right: 20px;
+}
+.program-title h3,
+.program-title span {
+    display: inline;
 }
 
 .our-services .col-sm-4 {
@@ -316,12 +339,13 @@ right:0px;
     letter-spacing: 1px;
     margin-bottom: 20px;
     text-transform: capitalize;
-    font: 400 5em/0.8 'Alex Brush', 'Dancing Script', Helvetica, sans-serif;
+    font: bold 5em/0.8 'Alex Brush', 'Dancing Script', Helvetica, sans-serif;
     text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
 }
 .flex-caption p {
     margin: 0 0 15px;
     font-size: 18px !important;
+    font-weight: bold;
 }
 .flex-caption a{
     background: #fff;
