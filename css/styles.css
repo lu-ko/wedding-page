@@ -112,7 +112,9 @@ line-height: 41px;
   border-bottom: 1px solid #f2f2f2;
   padding-bottom: 50px;
 }
-
+.parking-map {
+    width: 100%;
+}
 .service-icon-white {
     color: white !important;
     border: 1px solid white !important;
@@ -297,7 +299,7 @@ a:hover {
 .copyright {
     color: #fff;
     padding: 20px 0;
-    background: rgba(247, 98, 9, 0.48); /* COLOR */
+    background: var(--base-color);
     border-top: 1px solid #E65C5C;
 }
 #top {
@@ -620,10 +622,11 @@ text-align: center;
 	width: 100%;
 	position: relative;
 	padding: 0px;
+	/*
 	background: url("../images/banner-bg.jpg") no-repeat;
 	background-size: 100% 100%;
 	background-size: cover;
-	position: relative;
+	 */
 }
 .banner-container:before {
 /* position: absolute; */
@@ -640,8 +643,7 @@ content: '';
     width: 100%;
     top: 0;
     bottom: 0;
-    /* background: rgba(241, 0, 0, 0.48); */
-    background: rgba(247, 98, 9, 0.48);
+    background: var(--base-color);
 }
 .banner-container > img {
 	width: 100%;

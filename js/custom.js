@@ -79,6 +79,11 @@ var customScripts = {
             owl.trigger('owl.prev');
         })
     },
+    parkingMap: function () {
+        $('img.parking-map').click(function() {
+            window.location.href = 'images/parking-map.png';
+        });
+    },
     bannerHeight: function () {
         var bHeight = $(".banner-container").height();
         $('#da-slider').height(bHeight);
@@ -106,6 +111,7 @@ var customScripts = {
 		customScripts.waySlide();
 		customScripts.fitText();
         customScripts.bannerHeight();
+        customScripts.parkingMap();
     }
 }
 $('document').ready(function () {
