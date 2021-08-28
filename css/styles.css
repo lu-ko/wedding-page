@@ -25,7 +25,7 @@ body {
 	-moz-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
     --base-color: rgba(247, 98, 9, 0.48);
-    --text-color: #666666;
+    --text-color: #858585;
 }
 ::selection {
 	color: #fff;
@@ -39,18 +39,30 @@ list-style:none;
  background: #A43E89;
 }
 p {
-	color: #858585;
+	color: var(--text-color);
 	margin: 0 0 1em !important;
+}
+.div-center {
+    float: none;
+    margin: 0 auto;
 }
 p.txt-justify {
     text-align: justify;
     text-justify: inter-word;
 }
-p.txt-warning {
-    color: red;
+.txt-warning {
+    color: var(--text-color);
+    font-weight: bold;
+}
+ul.ul-circle li {
+    list-style-type: circle;
+	margin-left: 40px;
 }
 h1, h2, h3, h4, h5, h6, .logo {
 	font-family: 'Dancing Script', cursive;
+}
+h3 {
+    color: black;
 }
 .fitImage {
 	max-width: 100%;
