@@ -164,7 +164,7 @@ line-height: 41px;
     margin-bottom: 0px;
 }
 .program-row-underline {
-    border-bottom: 2px solid black;
+    border-top: 2px solid black;
 }
 .program-icon {
     height: 40px;
