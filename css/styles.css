@@ -337,10 +337,10 @@ right:0px;
 }
 .flex-caption {
     zoom: 1;
-    bottom: 20%;
+    bottom: 15%;
     color: #fff;
     margin: 0;
-    padding: 25px 25px 25px 30px;
+    padding: 45px 15px 10px 15px;
     position: absolute;
     left: 0;
     background: transparent;
@@ -353,12 +353,12 @@ right:0px;
     letter-spacing: 1px;
     margin-bottom: 20px;
     text-transform: capitalize;
-    font: bold 5em/0.8 'Alex Brush', 'Dancing Script', Helvetica, sans-serif;
+    font: bold 6.5em/0.8 'Alex Brush', 'Dancing Script', Helvetica, sans-serif;
     text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
 }
 .flex-caption p {
     margin: 0 0 15px;
-    font-size: 18px !important;
+    font-size: 1.5em !important;
     font-weight: bold;
 }
 .flex-caption a{
@@ -421,7 +421,7 @@ margin-bottom: 30px;
 	background-color: #A43E89;
 	background: var(--base-color);
 	border: 0;
-	margin: 18px 0;
+	margin: 15px 0;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
 /*background-color: #A43E89;*/
@@ -535,7 +535,7 @@ input:placeholder-shown {
 /*----Nav ----*/
 .header .navbar-brand {
 	float: left;
-	padding: 22px 15px;
+	/** padding: 22px 15px; */
 	line-height: 18px;
 	height: 50px;/*color:#A43E89;*/
 }
@@ -1229,13 +1229,18 @@ padding:35px 0;
 }
 .tab-pane .tab-inner { padding: 30px 0 20px; }
 
+@media (min-width: 1024px) {
+    .flex-caption {
+        bottom: 35%;
+    }
+}
 @media (min-width: 768px) {
     .nav.nav-justified > li > a > .quote {
         left: auto;
         top: auto;
         right: 20px;
         bottom: 0px;
-    }  
+    }
 }
 @media (min-width: 768px) {
 .header .navbar-brand {
@@ -1244,6 +1249,7 @@ padding:35px 0;
 .navbar-nav {
 	float: right;
     z-index: 2;
+    font-size: 11px;
 }
 .navbar-inverse .navbar-nav > li > a {
 	color: #FFFFFF;
@@ -1345,7 +1351,7 @@ font-size:30px;
 }
 .banner-container {
 	background-size: contain;
-	margin-top: 69px;
+	margin-top: 65px;
 }
 .banner-container > img {
 	width: 100%;
@@ -1354,6 +1360,7 @@ font-size:30px;
 .flex-caption{
 /* display:none; */
     z-index: 1;
+    padding: 45px 15px 20px 15px;
 }
 .responsive-headline {
 	font-size: 16px !important
@@ -1365,13 +1372,18 @@ margin-top: 22%;
 line-height: 35px; 
 }
 .flex-caption h3{
-font-size:40px;
+    font-size: 2em;
+}
+.flex-caption p {
+    margin: 0 0 15px;
+    font-size: 15px !important;
+    font-weight: bold;
 }
 .responsive-headline {
 font-size: 21px !important;
 }
 .navbar {
-	min-height: 69px;
+	min-height: 65px;
 }
 .arrow-link {
 	display: none;
@@ -1451,6 +1463,14 @@ overflow: hidden;
 @media (max-width: 320px) {
 .banner-container {
 	background-size: contain;
+}
+.flex-caption h3{
+    font-size: 2em;
+}
+.flex-caption p {
+    margin: 0 0 5px !important;
+    font-size: 13px !important;
+    font-weight: bold;
 }
 .da-slider {
 	height: 300px;
